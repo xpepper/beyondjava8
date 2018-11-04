@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal-md</title>
+        <link rel="stylesheet" href="./css/reveal.css">
+        <link rel="stylesheet" href="./assets/nipa-night.css" id="theme">
+        <link rel="stylesheet" href="./css/highlight/zenburn.css">
+        <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
+
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template"># Beyond 
+# Java 8
+### What should you know?</script></section><section  data-markdown><script type="text/template"> 
+* What is going to **happen**? 
+* What is going to **change**?
+* How **hard** is to update to Java 11?
+* Is still Java **free**?
+* What's new in the most recent versions of the **JDK**?
+</script></section><section  data-markdown><script type="text/template">
+### Topics
+
+* **Six-month** release cycle
+* New **licensing** and long-term support models
+* New "common JDK sources" for all
+* From Java 8 onto a **modular** and flexible JDK
+</script></section><section  data-markdown><script type="text/template">
+### Java's old release cadence
+
+In the past, Java major releases where **long-running** and **irregular**
+
+* Java 7 took 5 years
+* Java 8 took 3 years
+* Java 9 took 3.5 years 
+</script></section><section  data-markdown><script type="text/template">
+### Java's old release cadence
+
+"Fat" releases that had a massive impact on the way you write Java code
+
+* generics (Java 5) 
+* functional constructs, streams, method reference (`::`) (Java 8)
+</script></section><section  data-markdown><script type="text/template">
+### New Release Cadence
+A brand-new major Java SE version will be released every 6 months (in September and March)
+
+> The rate of innovation doesn’t change.    
+> The rate of innovation delivery increases. 
+> 
+> — Mark Reinhold 
+
+**This started with Java 9, released in September 2017**
+</script></section><section  data-markdown><script type="text/template">
+### Then:
+
+* Mar 18 Java 10
+* Sep 18 Java 11 (LTS)
+* Mar 19 Java 12
+* Sep 19 Java 13  
+* Mar 20 Java 14  
+* Sep 20 Java 15  
+* Mar 21 Java 16  
+* Sep 21 Java 17 (LTS)
+* ...
+</script></section><section  data-markdown><script type="text/template">
+### What about Java 8?
+
+* **Released 03/2014**
+* **is a LTS release** 
+* **free support ends 01/2019**
+</script></section><section  data-markdown><script type="text/template">
+### Java 9
+* **Released 09/2017**
+* **Already unmantained (free support ended 03/2018)**
+</script></section><section  data-markdown><script type="text/template">
+### Java 10
+* **Released 03/2018**
+* **Already unmantained (free support ended 09/2018)**
+</script></section><section  data-markdown><script type="text/template">
+### Java 11
+
+Current version of Java, which is a LTS:
+* **free updates from 09/2018 to 03/2019** (six months)
+* **OracleJDK commercial support for 5+ years**
+* **free updates from AdoptOpenJDK**
+</script></section><section  data-markdown><script type="text/template">
+### OpenJDK Is The New Default
+
+Starting from JDK 11, [OpenJDK](https://openjdk.java.net/) is the official JDK source code repository.
+</script></section><section  data-markdown><script type="text/template">
+### OpenJDK Is The New Default
+
+From the **OpenJDK** repo, each vendor build its binary distribution:
+
+* Oracle builds and mantains [OracleJDK](https://java.oracle.com/) 
+* Oracle also - during the life of a JDK version, 6 months - builds and ships the binary of [OpenJDK](http://jdk.java.net/)
+* [AdoptOpenJDK](https://adoptopenjdk.net/) - checks out source code and build their binary version of JDK
+* **RedHat JDK** (adding their stuff, e.g. their Garbage Collector)
+* **AzulJDK** binary => **Zulu**
+
+⇝ **OpenJDK** is the new normal!
+</script></section><section  data-markdown><script type="text/template">
+### LTS? Free? Commercial?
+
+During the 6 months of life of Java 11
+
+* **OpenJDK** binary, **AdoptOpenJDK**, Azul **Zulu** 
+  * => all GPL license. 
+  * You can use them for free in production.
+* **OracleJDK** 
+  * => pay for use it in production! _(from version 11 onwards)_.
+</script></section><section  data-markdown><script type="text/template">
+### What happens in March 2019 when Java 11 ends its life?
+
+You can choose: 
+* **upgrade to Java 12**
+* **stay in Java 11** 
+</script></section><section  data-markdown><script type="text/template">
+If you **stay on Java 11**, you could
+
+* **Never update** => exposed to security vulnerabilities, bugs, ...
+* **Update to Java 11.0.something** => BUT where do you take that patched version?
+</script></section><section  data-markdown><script type="text/template">
+### Oracle will fix / patch only the current JDK version 
+* (actually OpenJDK 11)
+* No backporting on the previous versions!
+
+### Oracle will also backport to current Oracle JDK LTS version (OracleJDK 11) 
+
+* and you need a **"Java SE Subscription"** to have the LTS updated binary _(this is actually what LTS means)_ 
+</script></section><section  data-markdown><script type="text/template">
+### Who fix the older versions?
+
+* The **community** + **RedHat** _should_ backport fixes
+* How much time will be taken to fix a vulnerability once found (and published)? Nobody knows! We'll see...
+</script></section><section  data-markdown><script type="text/template">
+### Vendors create binary builds 
+
+After RedHat+Community fix / patch the source repo, someone will have to **build a new JDK binary distribution** with that bug/vulnerabilities fixed.
+
+* **AdoptOpenJDK** => offers free builds of LTS JDK (via GPL)
+* other vendors (**Oracle**, **RedHat**, **IBM**, **Azul**, ...) => you have to **pay** for this!
+</script></section><section  data-markdown><script type="text/template"><!-- .slide: style="text-align: left;" -->  
+
+> _Let me assure you of one thing: whether by Oracle or Red Hat or someone else, JDK LTS releases will continue to be supported. We all have a lot invested in Java, and we won’t let it fall._
+
+>— [Andrew Haley, Red Hat](http://mail.openjdk.java.net/pipermail/jdk-dev/2018-August/001826.html)
+</script></section><section  data-markdown><script type="text/template">
+### Java9: Java Module System
+
+* Java 8 was all about **how we write code differently**.
+* Java 9 is all about **how we package and deploy our code**. There are almost no code change.
+</script></section><section  data-markdown><script type="text/template">
+### Java9: Java Module System
+
+* Java 8 changes **how we think to and write code**. 
+* Java 9 changes **how we package code**.
+</script></section><section  data-markdown><script type="text/template">
+### Some breaking changes 
+
+* Upgrading from 8 to 9/10/11 **is NOT simple**
+* **Many runtime behavior changes**
+* Needs very **thorough testing**
+</script></section><section  data-markdown><script type="text/template">
+### Loading resources
+
+```java
+URL resource = sysCL.getResource("/com/foo/bar.properties"); 
+// It’s there, but it won’t find it! 
+resource = null;
+```
+</script></section><section  data-markdown><script type="text/template">
+### What about Phoenix?
+
+```java
+⋊> ~/D/w/m/phoenix-project on master ⨯ rg -i "class.*getResource\("                                 
+
+ispservicestub/src/com/xpeppers/ispservicestub/ISPServiceStubEnvironment.java
+21:   return this.getClass().getClassLoader().getResource(configurationFilePath);
+
+alipaystub/src/com/xpeppers/alipaystub/AlipayStubEnvironment.java
+21:   return this.getClass().getClassLoader().getResource(configurationFilePath);
+
+mybankstub/src/com/xpeppers/main/MyBankStubEnvironment.java
+19:   return this.getClass().getClassLoader().getResource(configurationFilePath);
+
+phoenix/src/com/xpeppers/phoenix/main/BatchEnvironment.java
+38:   return this.getClass().getClassLoader().getResource(configurationFilePath);
+
+stresstest/src/com/xpeppers/phoenix/stress/StressTest.java
+12:   URL confFile = this.getClass().getClassLoader().getResource("stresstest.properties");
+
+simonidis/src/com/xpeppers/phoenix/fakeauthorizationws/SimonidisEnvironment.java
+17:   return this.getClass().getClassLoader().getResource(configurationFilePath);
+
+minos/src/com/xpeppers/minos/domain/AcsVereqVerifier.java
+24: private final static URL schemaPath = AcsVereqVerifier.class.getResource("/dtd/acs_vereq_schema.xsd");
+
+minos/src/com/xpeppers/minos/domain/validators/PareqSyntaxValidator.java
+21: private final static URL schemaPath = PareqSyntaxValidator.class.getResource("/dtd/acs_pareq_schema.xsd");
+
+caffrey/src/com/xpeppers/phoenix/caffrey/cardgateway/CardEnrollmentMapper.java
+70:     URL resource = this.getClass().getClassLoader().getResource(configurationFilePath);
+```
+</script></section><section  data-markdown><script type="text/template">
+### Internal APIs encapsulated!
+
+* Cannot access `sun.*` or `com.sun.*` classes anymore!
+</script></section><section  data-markdown><script type="text/template">
+# Who cares?
+</script></section><section  data-markdown><script type="text/template">
+
+### Phoenix!
+
+Just one example: 
+
+```java
+minos/src/com/xpeppers/minos/domain/SignXMLDOMforNewHSM.java
+3:import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+4:import com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+5:import com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+23:import static com.sun.org.apache.xml.internal.security.Init.init;
+24:import static com.sun.org.apache.xml.internal.security.c14n.Canonicalizer.ALGO_ID_C14N_OMIT_COMMENTS;
+```
+</script></section><section  data-markdown><script type="text/template">
+### Java Module System
+
+#### Visibility
+
+**`public`** is not the same anymore!  
+
+A **`public`** class is available, but has to be exported by its containing module to be **"visible"**.    
+
+**`public`** + **`exports`** becomes visible outside the module!
+</script></section><section  data-markdown><script type="text/template">
+### Transitioning
+
+**Old jars will be assumed to be modules in Java 9.**
+
+* Java 9 will assume that the name of the module is the name of the jar
+  * e.g. `junit` is the name of the module for the `junit-4.12.jar` jar
+* It will also export everything in that jar.    
+* It will require all you are using.    
+</script></section><section  data-markdown><script type="text/template">
+### Unnamed Module
+
+All stuff that is in the classpath (tipically jars) will be put into an "unnamed" module.
+
+* It **reads** every named modules.
+* It **exposes** every package.
+* **Code in named modules cannot depend on code in the unnamed module**.
+</script></section><section  data-markdown><script type="text/template">
+### JShell
+
+`docker run --rm -it openjdk:11-slim  /bin/jshell`
+</script></section><section  data-markdown><script type="text/template">
+### Migrate to Java 11
+
+#### Start migrating to Java9
+#### Then move to Java 11
+</script></section><section  data-markdown><script type="text/template">
+# How?
+
+* First, **update all your dependencies first** (libraries, frameworks, etc)
+* **Update your app server to latest version** (is compatible with Java 9) - e.g. Tomcat, Jetty, etc
+* _BTW is your IDE ready?_
+</script></section><section  data-markdown><script type="text/template">
+### Resources
+
+* Java 9/10/11 - What's new and why you should upgrade 
+  * [slides](https://www.slideshare.net/SimoneBordet/java-91011-whats-new-and-why-you-should-upgrade)
+  * [video](https://www.youtube.com/watch?v=cUqcSFLnk_E&list=PLRsbF2sD7JVq4IapQ-Fz6AuHMj2KITL6P&index=17)
+
+* Java Next! Release Cadence, Licensing, And LTS
+  * [slides](https://slides.codefx.org/java-next/2018-09-30-codefx@yt/#/)
+  * [video](https://www.youtube.com/watch?v=7xkyV2kLb0c&list=PL_-IO8LOLuNqMlbUSiThLaQda6ASUCrLm)
+
+* [Java is Still Free!](https://docs.google.com/document/d/1nFGazvrCvHMZJgFstlbzoHjpAVwv5DEdnaBr_5pKuHo/edit#heading=h.p3qt2oh5eczi)
+
+* [No Free Java LTS Version?
+](https://medium.com/codefx-weekly/no-free-java-lts-version-b850192745fb)
+</script></section><section  data-markdown><script type="text/template">
+### Migration guides
+
+* [Java 9 Migration Guide](https://blog.codefx.org/java/java-9-migration-guide/)
+* [All You Need To Know For Migrating To Java 11](https://blog.codefx.org/java/java-11-migration-guide/)
+</script></section><section  data-markdown><script type="text/template">
+### On Java 9 Module System
+
+* [Exploring Java 9 by Venkat Subramaniam
+](https://www.youtube.com/watch?v=8XmYT89fBKg)
+* [Modular Development with JDK 9
+](https://www.youtube.com/watch?v=gtcTftvj0d0)
+</script></section></div>
+        </div>
+
+        <script src="./lib/js/head.min.js"></script>
+        <script src="./js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: './plugin/zoom-js/zoom.js', async: true },
+              { src: './plugin/notes/notes.js', async: true },
+              { src: './plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default', // none/fade/slide/convex/concave/zoom
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {"controls":false,"progress":false,"slideNumber":false,"history":true,"keyboard":true,"overview":true,"center":true,"touch":true,"loop":false,"rtl":false,"fragments":true,"embedded":false,"autoSlide":0,"autoSlideStoppable":true,"mouseWheel":false,"hideAddressBar":true,"previewLinks":false,"transitionSpeed":"default","backgroundTransition":"fade","viewDistance":3,"parallaxBackgroundImage":"./assets/luca-bravo-177552-unsplash.jpg","parallaxBackgroundSize":"2100px 800px","parallaxBackgroundHorizontal":15,"parallaxBackgroundVertical":50,"width":960,"height":700,"margin":0.1,"minScale":0.2,"maxScale":1.5};
+            options = extend(defaultOptions, options, queryOptions);
+        </script>
+
+
+        <script>
+          Reveal.initialize(options);
+        </script>
+    </body>
+</html>
