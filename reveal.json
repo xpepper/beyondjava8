@@ -19,7 +19,7 @@
   "transitionSpeed": "default",
   "backgroundTransition": "fade",
   "viewDistance": 3,
-  "parallaxBackgroundImage": "./luca-bravo-177552-unsplash.jpg",
+  "parallaxBackgroundImage": "./assets/luca-bravo-177552-unsplash.jpg",
   "parallaxBackgroundSize": "2100px 800px",
   "parallaxBackgroundHorizontal": 15,
   "parallaxBackgroundVertical": 50,
