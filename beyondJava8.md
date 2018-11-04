@@ -1,13 +1,15 @@
 # Beyond 
 # Java 8
 ### What should you know?
+
 ---
- 
-* What is going to **happen**? 
-* What is going to **change**?
-* How **hard** is to update to Java 11?
-* Is still Java **free**?
-* What's new in the most recent versions of the **JDK**?
+
+| What is going to **happen**?          | 
+| -----------                           |
+| What is going to **change**?          |
+| Is still Java **free**?               |
+| How **hard** is to update to Java 11? |
+| What's new in the new **JDK** |
 
 ---
 
