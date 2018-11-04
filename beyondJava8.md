@@ -338,14 +338,14 @@ All stuff that is in the classpath (tipically jars) will be put into an "unnamed
 * [No Free Java LTS Version?
 ](https://medium.com/codefx-weekly/no-free-java-lts-version-b850192745fb)
 
----
+----
 
 ### Migration guides
 
 * [Java 9 Migration Guide](https://blog.codefx.org/java/java-9-migration-guide/)
 * [All You Need To Know For Migrating To Java 11](https://blog.codefx.org/java/java-11-migration-guide/)
 
----
+----
 
 ### On Java 9 Module System
 
@@ -353,3 +353,18 @@ All stuff that is in the classpath (tipically jars) will be put into an "unnamed
 ](https://www.youtube.com/watch?v=8XmYT89fBKg)
 * [Modular Development with JDK 9
 ](https://www.youtube.com/watch?v=gtcTftvj0d0)
+
+---
+
+[The State of Developer Ecosystem Survey in 2018
+](https://www.jetbrains.com/research/devecosystem-2018/java/)
+
+![The State of Developer Ecosystem Survey in 2018](./assets/The_State_of_Developer_Ecosystem_Survey_in_2018.png)
+
+----
+
+[A twitter survey
+](https://twitter.com/winterbe_/status/1035864662976413696)
+
+![A twitter survey](./assets/twitter.survey.png)
+
