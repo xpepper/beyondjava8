@@ -15,3 +15,6 @@ reveal-md beyondJava8.md --theme assets/nipa-night.css --static _site --static-d
 ```shell
 reveal-md beyondJava8.md -w --theme nipa-night.css
 ```
+
+#### credits
+* [Photo by Val Vesa](https://unsplash.com/photos/47UmRj-uH0k) on Unsplash

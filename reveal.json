@@ -1,6 +1,6 @@
 {
   "controls": false,
-  "progress": false,
+  "progress": true,
   "slideNumber": false,
   "history": true,
   "keyboard": true,
@@ -19,8 +19,8 @@
   "transitionSpeed": "default",
   "backgroundTransition": "fade",
   "viewDistance": 3,
-  "parallaxBackgroundImage": "./assets/luca-bravo-177552-unsplash.jpg",
-  "parallaxBackgroundSize": "2100px 800px",
+  "parallaxBackgroundImage": "./assets/val-vesa-499171-unsplash.jpg",
+  "parallaxBackgroundSize": "2100px 900px",
   "parallaxBackgroundHorizontal": 15,
   "parallaxBackgroundVertical": 50,
   "width": 960,
