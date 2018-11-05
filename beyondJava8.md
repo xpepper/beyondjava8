@@ -109,7 +109,7 @@ From the **OpenJDK** repo, each vendor build its binary distribution:
 * Oracle builds and mantains [OracleJDK](https://java.oracle.com/) 
 * Oracle also - during the life of a JDK version, 6 months - builds and ships the binary of [OpenJDK](http://jdk.java.net/)
 * [AdoptOpenJDK](https://adoptopenjdk.net/) - checks out source code and build their binary version of JDK
-* **RedHat JDK** (adding their stuff, e.g. their Garbage Collector)
+* **RedHat JDK** ( + their stuff, e.g. [Shenandoah GC](https://wiki.openjdk.java.net/display/shenandoah/Main))
 * **AzulJDK** binary => **Zulu**
 
 ⇝ **OpenJDK** is the new normal!
