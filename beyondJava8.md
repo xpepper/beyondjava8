@@ -4,27 +4,28 @@
 
 ---
 
-| What is going to **happen**?          | 
-| -----------                           |
-| What is going to **change**?          |
-| Is still Java **free**?               |
-| How **hard** is to update to Java 11? |
-| What's new in the new **JDK** |
+| What is going to **happen**?              | 
+| -----------                               |
+| What is going to **change**?              |
+| Is still Java **free**?                   |
+| How **hard** is it to update to Java 11?  |
+| What's new in the new **JDK**             |
 
 ---
 
 ### Topics
 
 * **Six-month** release cycle
-* New **licensing** and long-term support models
-* New "common JDK sources" for all
+* New **licensing** and **long-term support** (LTS) models
+* **OpenJDK** is the new normal
 * From Java 8 onto a **modular** and flexible JDK
 
 ---
 
 ### Java's old release cadence
 
-In the past, Java major releases where **long-running** and **irregular**
+In the past, Java major releases where   
+**long-running** and **irregular**
 
 * Java 7 took 5 years
 * Java 8 took 3 years
@@ -34,15 +35,19 @@ In the past, Java major releases where **long-running** and **irregular**
 
 ### Java's old release cadence
 
-"Fat" releases that had a massive impact on the way you write Java code
+"Fat" releases had a **massive impact**   
+on the way we write Java code
 
-* generics (Java 5) 
-* functional constructs, streams, method reference (`::`) (Java 8)
+* Java 5: generics
+* Java 8:
+  * functional constructs
+  * streams
+  * method reference (`::`)
 
 ---
 
 ### New Release Cadence
-A brand-new major Java SE version will be released every 6 months (in September and March)
+A brand-new major Java SE version will be released **every 6 months** (in *September* and *March*)
 
 > The rate of innovation doesn’t change.    
 > The rate of innovation delivery increases. 
