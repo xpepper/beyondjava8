@@ -58,17 +58,17 @@ A brand-new major Java SE version will be released **every 6 months** (in *Septe
 
 ---
 
-### Then:
-
-* Mar 18 Java 10
-* Sep 18 Java 11 (LTS)
-* Mar 19 Java 12
-* Sep 19 Java 13  
-* Mar 20 Java 14  
-* Sep 20 Java 15  
-* Mar 21 Java 16  
-* Sep 21 Java 17 (LTS)
-* ...
+|Then                   |
+|-----------------------|
+| Mar 18 Java 10        |
+| Sep 18 Java 11 (LTS)  |
+| Mar 19 Java 12        |
+| Sep 19 Java 13        |
+| Mar 20 Java 14        |
+| Sep 20 Java 15        |
+| Mar 21 Java 16        |
+| Sep 21 Java 17 (LTS)  |
+| ...                   |
 
 ---
 
@@ -82,13 +82,15 @@ A brand-new major Java SE version will be released **every 6 months** (in *Septe
 
 ### Java 9
 * **Released 09/2017**
-* **Already unmantained (free support ended 03/2018)**
+* **Already unmantained**
+  * free support ended *03/2018*
 
 ---
 
 ### Java 10
 * **Released 03/2018**
-* **Already unmantained (free support ended 09/2018)**
+* **Already unmantained**
+  * free support ended *09/2018*
 
 ---
 
@@ -126,10 +128,10 @@ From the **OpenJDK** repo, each vendor build its binary distribution:
 During the 6 months of life of Java 11
 
 * **OpenJDK** binary, **AdoptOpenJDK**, Azul **Zulu** 
-  * => all GPL license. 
+  * all GPL license. 
   * You can use them for free in production.
 * **OracleJDK** 
-  * => pay for use it in production! _(from version 11 onwards)_.
+  * pay for use it in production _(from version 11 onwards)_.
 
 ---
 
@@ -143,25 +145,30 @@ You can choose:
 
 If you **stay on Java 11**, you could
 
-* **Never update** => exposed to security vulnerabilities, bugs, ...
-* **Update to Java 11.0.something** => BUT where do you take that patched version?
+* **Never update** 
+  * => exposed to security vulnerabilities, bugs, ...
+* **Update to Java 11.0.something** 
+  * => BUT where do you take that patched version?
 
 ---
 
 ### Oracle will fix / patch only the current JDK version 
 * (actually OpenJDK 11)
-* No backporting on the previous versions!
+* **No backporting** on the previous versions!
+
+---
 
 ### Oracle will also backport to current Oracle JDK LTS version (OracleJDK 11) 
 
-* and you need a **"Java SE Subscription"** to have the LTS updated binary _(this is actually what LTS means)_ 
+but you'll need a **"Java SE Subscription"** to have the LTS updated binary   
+_(this is actually what LTS means)_ 
 
 ---
 
 ### Who fix the older versions?
 
 * The **community** + **RedHat** _should_ backport fixes
-* How much time will be taken to fix a vulnerability once found (and published)? Nobody knows! We'll see...
+* **How much time** will be taken to fix a vulnerability once found (and published)? Nobody knows! We'll see...
 
 ---
 
