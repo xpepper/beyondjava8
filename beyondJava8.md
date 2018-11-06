@@ -40,7 +40,7 @@ on the way we write Java code
 
 * **Java 5**: Generics
 * **Java 8**:
-  * Functional constructs
+  * Functional constructs (`λ`)
   * Streams
   * Method Reference (`::`)
 * **Java 9**: Java Module System (_Jigsaw_)
@@ -317,12 +317,15 @@ All stuff that is in the classpath (tipically jars) will be put into an "unnamed
 
 ### JShell
 
-`docker run --rm -it openjdk:11-slim  /bin/jshell`
+`docker run --rm -it openjdk:11-slim /bin/jshell`
 
 ---
 
 ### JLink
-To create small custom JRE with just your dependencies.
+Create your own JRE images:
+
+* with the JDK modules your app needs
+* with all modules (JDK, app, deps)
 
 _Smells like a "Docker" approach for the Java world._ 
 
