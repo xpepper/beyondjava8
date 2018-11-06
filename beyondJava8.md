@@ -321,6 +321,13 @@ All stuff that is in the classpath (tipically jars) will be put into an "unnamed
 
 ---
 
+### JLink
+To create small custom JRE with just your dependencies.
+
+_Smells like a "Docker" approach for the Java world._ 
+
+---
+
 ### Migrate to Java 11
 
 #### Start migrating to Java9
