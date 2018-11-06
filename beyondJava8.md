@@ -38,11 +38,12 @@ In the past, Java major releases where
 "Fat" releases had a **massive impact**   
 on the way we write Java code
 
-* Java 5: generics
-* Java 8:
-  * functional constructs
-  * streams
-  * method reference (`::`)
+* **Java 5**: Generics
+* **Java 8**:
+  * Functional constructs
+  * Streams
+  * Method Reference (`::`)
+* **Java 9**: Java Module System (_Jigsaw_)
 
 ---
 
