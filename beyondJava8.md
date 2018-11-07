@@ -346,6 +346,13 @@ _Smells like a "Docker" approach for the Java world._
 
 ---
 
+## What about Kotlin?
+
+[Kotlin support for Java 9 and Java 10
+Support](https://discuss.kotlinlang.org/t/kotlin-support-for-java-9-and-java-10/8054/4)
+
+---
+
 ### Resources
 
 * Java 9/10/11 - What's new and why you should upgrade 
