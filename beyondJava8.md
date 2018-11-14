@@ -348,8 +348,7 @@ _Smells like a "Docker" approach for the Java world._
 
 ## What about Kotlin?
 
-[Kotlin support for Java 9 and Java 10
-Support](https://discuss.kotlinlang.org/t/kotlin-support-for-java-9-and-java-10/8054/4)
+[Kotlin support for Java 9 and Java 10](https://discuss.kotlinlang.org/t/kotlin-support-for-java-9-and-java-10/8054/4)
 
 ---
 
