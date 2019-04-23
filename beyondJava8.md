@@ -7,7 +7,7 @@
 | What is going to **happen**?              | 
 | -----------                               |
 | What is going to **change**?              |
-| Is still Java **free**?                   |
+| Is Java still **free**?                   |
 | How **hard** is it to update to Java 11?  |
 | What's new in the new **JDK**             |
 
@@ -15,7 +15,7 @@
 
 ### Topics
 
-* **Six-month** release cycle
+* **Six-months** release cycle
 * New **licensing** and **long-term support** (LTS) models
 * **OpenJDK** is the new normal
 * From Java 8 onto a **modular** and flexible JDK
